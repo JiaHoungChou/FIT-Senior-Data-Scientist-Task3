@@ -109,7 +109,7 @@ After GAN balancing, training accuracy and balanced accuracy were both 0.9131 in
 
 The GAN-Augmented CNN exceeded 0.96 training balanced accuracy by epoch 2. The baseline CNN did not exceed the same level until epoch 6. Similarly, the augmented model reached approximately 0.9695 balanced accuracy by epoch 4, whereas the baseline required approximately eight epochs to reach a comparable value. Therefore, GAN augmentation approximately halved the number of epochs required to reach this level of class-balanced training performance.
 
-![Training balanced accuracy comparison](figures/training_balanced_accuracy_comparison.png)
+![Training balanced accuracy comparison](imgs/training_balanced_accuracy_comparison.png)
 
 ### Validation Convergence
 
@@ -121,11 +121,7 @@ Therefore, it would be inaccurate to state that GAN augmentation made validation
 
 The difference may be related to the much larger training dataset and the domain difference between synthetic training images and real validation images.
 
-![Validation accuracy comparison](figures/validation_accuracy_comparison.png)
-
-![GAN-Augmented CNN loss curves](figures/gan_augmented_cnn_loss_curve.png)
-
-![GAN-Augmented CNN accuracy curves](figures/gan_augmented_cnn_accuracy_curve.png)
+![Validation accuracy comparison](imgs/validation_accuracy_comparison.png)
 
 ## 7. Final Test Performance
 
@@ -145,9 +141,7 @@ A more interpretable comparison is the number of errors. The baseline model misc
 
 Test loss decreased from 0.0395 to 0.0334, which is a **15.4% relative reduction**. The lower loss suggests that the augmented model was not only slightly more accurate but also produced better-calibrated or more confident correct predictions on average.
 
-![Final test metric comparison](figures/test_metric_comparison.png)
-
-![Test error count comparison](figures/test_error_count_comparison.png)
+![Final test metric comparison](imgs/test_metric_comparison.png)
 
 ## 8. Minority-Class Effect
 
